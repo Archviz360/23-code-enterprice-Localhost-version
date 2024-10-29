@@ -1,3 +1,4 @@
+![Skärmbild 2024-10-29 150604](https://github.com/user-attachments/assets/b351e946-22a7-4e73-ae92-035babfedbd7)
 # 23-code-enterprice-Localhost-version
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Archviz360/23-code-enterprice-Localhost-version)
@@ -38,3 +39,7 @@ You can test the current preview of 23 Code Enterprise locally:
 **Target Release:** 2025/2026
 
 By working together, we can create a powerful and flexible IDE that empowers developers worldwide.
+
+
+
+
