@@ -32,38 +32,38 @@ You can test the current preview of 23 Code Enterprise locally:
 1. **Download:** Download the project files from our GitHub repository.
 2. **Install Dependencies:** Run `npm install` in your terminal to install required dependencies.
 3. **Start the Development Server:** Run `npm run dev` to start the development server.
----------------------------------------
-**New features:** 
-Collaboration preview(button leads to blank page) 
-open file
-save file(saves in JS)
-New Logo
-New File
-Language swtich
-Text size 
-IntelliCode feature 
---------------------------------------
-**Note:** The current preview is a work in progress and may have limitations.
-Limitation as of 11/3/2024: Some buttons does not work at all and some leads directly to a blank page. 
-Also the side panel is temporary removed. More work needs to be done to get it to work. 
-Collaboration button:leads to a blank page 
-Settings:does nothing
-close tab: does nothing
-Enter Room ID:just for display for now
---------------------------------------
-**To do:** 
-Fix all buttons so they function properly
-Add asset management side panel back
-Add an information tab on the lower part of the window
-Add "Save As" window functionality
-Create a Discord server for us
---------------------------------------------
+
+## New Features
+- **Collaboration Preview:** Button currently leads to a blank page.
+- **Open File:** Functionality to open files.
+- **Save File:** Save files in JavaScript.
+- **New Logo:** Updated branding.
+- **New File:** Ability to create new files.
+- **Language Switch:** Feature to switch between languages.
+- **Text Size:** Adjustable text size.
+- **IntelliCode Feature:** AI-powered code suggestions.
+
+## Note
+The current preview is a work in progress and may have limitations as of 11/3/2024:
+- Some buttons do not work and lead directly to a blank page.
+- The side panel is temporarily removed and needs more work to function properly.
+- **Collaboration Button:** Leads to a blank page.
+- **Settings:** No functionality.
+- **Close Tab:** No functionality.
+- **Enter Room ID:** For display purposes only.
+
+## To Do
+- Fix all buttons to ensure they function properly.
+- Add asset management side panel back.
+- Add an information tab on the lower part of the window.
+- Implement "Save As" window functionality.
+- Create a Discord server for the community.
+
 **Join us in shaping the future of 23 Code Enterprise!**
 
 **Target Release:** 2025/2026
 
 By working together, we can create a powerful and flexible IDE that empowers developers worldwide.
-
 
 
 
