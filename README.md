@@ -1,5 +1,5 @@
 ![00029-2941959318](https://github.com/user-attachments/assets/a93e6ebe-4d14-4beb-8dae-102938161209)
-![Skärmbild 2024-10-29 150604](https://github.com/user-attachments/assets/b351e946-22a7-4e73-ae92-035babfedbd7)
+![Skärmbild 2024-11-03 070622](https://github.com/user-attachments/assets/9c58a31e-ff42-4d72-a4aa-2dfc20223430)
 # 23-code-enterprice-Localhost-version
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Archviz360/23-code-enterprice-Localhost-version)
@@ -32,6 +32,7 @@ You can test the current preview of 23 Code Enterprise locally:
 1. **Download:** Download the project files from our GitHub repository.
 2. **Install Dependencies:** Run `npm install` in your terminal to install required dependencies.
 3. **Start the Development Server:** Run `npm run dev` to start the development server.
+
 
 ## New Features
 - **Collaboration Preview:** Button currently leads to a blank page.
