@@ -1,36 +1,72 @@
 import { create } from 'zustand';
-import * as Y from 'yjs';
-import { WebrtcProvider } from 'y-webrtc';
-import { MonacoBinding } from 'y-monaco';
+import { io, Socket } from 'socket.io-client';
+import { v4 as uuidv4 } from 'uuid';
 
 interface CollaborationState {
-  doc: Y.Doc | null;
-  provider: WebrtcProvider | null;
-  binding: MonacoBinding | null;
-  roomId: string;
-  setBinding: (binding: MonacoBinding) => void;
-  initializeCollaboration: (roomId: string) => void;
-  disconnectCollaboration: () => void;
+  socket: Socket | null;
+  roomId: string | null;
+  collaborators: Array<{ id: string; name: string }>;
+  isConnected: boolean;
+  createRoom: () => void;
+  joinRoom: (roomId: string) => void;
+  leaveRoom: () => void;
+  initialize: () => void;
 }
 
 export const useCollaborationStore = create<CollaborationState>((set, get) => ({
-  doc: null,
-  provider: null,
-  binding: null,
-  roomId: '',
-  setBinding: (binding) => set({ binding }),
-  initializeCollaboration: (roomId) => {
-    const doc = new Y.Doc();
-    const provider = new WebrtcProvider(`code-editor-${roomId}`, doc, {
-      signaling: ['wss://signaling.yjs.dev'],
+  socket: null,
+  roomId: null,
+  collaborators: [],
+  isConnected: false,
+
+  initialize: () => {
+    const socket = io('http://localhost:3001');
+
+    socket.on('connect', () => {
+      set({ isConnected: true });
     });
 
-    set({ doc, provider, roomId });
+    socket.on('disconnect', () => {
+      set({ isConnected: false });
+    });
+
+    socket.on('collaboratorJoined', (collaborator) => {
+      set((state) => ({
+        collaborators: [...state.collaborators, collaborator],
+      }));
+    });
+
+    socket.on('collaboratorLeft', (collaboratorId) => {
+      set((state) => ({
+        collaborators: state.collaborators.filter((c) => c.id !== collaboratorId),
+      }));
+    });
+
+    set({ socket });
   },
-  disconnectCollaboration: () => {
-    const { provider, doc } = get();
-    provider?.destroy();
-    doc?.destroy();
-    set({ doc: null, provider: null, binding: null, roomId: '' });
+
+  createRoom: () => {
+    const { socket } = get();
+    if (!socket) return;
+
+    const roomId = uuidv4().slice(0, 8);
+    socket.emit('createRoom', roomId);
+    set({ roomId });
+  },
+
+  joinRoom: (roomId: string) => {
+    const { socket } = get();
+    if (!socket) return;
+
+    socket.emit('joinRoom', roomId);
+    set({ roomId });
+  },
+
+  leaveRoom: () => {
+    const { socket, roomId } = get();
+    if (!socket || !roomId) return;
+
+    socket.emit('leaveRoom', roomId);
+    set({ roomId: null, collaborators: [] });
   },
 }));

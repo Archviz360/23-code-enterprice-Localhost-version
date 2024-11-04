@@ -3,7 +3,12 @@ import { X } from 'lucide-react';
 import { useEditorStore } from '../store/editorStore';
 
 export function Tabs() {
-  const { files, currentFile, switchFile } = useEditorStore();
+  const { files, currentFile, switchFile, closeFile } = useEditorStore();
+
+  const handleClose = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
+    closeFile(index);
+  };
 
   return (
     <div className="flex bg-gray-800 border-b border-gray-700 overflow-x-auto">
@@ -19,10 +24,10 @@ export function Tabs() {
         >
           {file.name}
           {files.length > 1 && (
-            <X className="w-4 h-4 hover:text-red-500" onClick={(e) => {
-              e.stopPropagation();
-              // TODO: Implement tab close functionality
-            }} />
+            <X 
+              className="w-4 h-4 hover:text-red-500" 
+              onClick={(e) => handleClose(e, index)}
+            />
           )}
         </button>
       ))}
