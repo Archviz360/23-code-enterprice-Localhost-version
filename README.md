@@ -36,29 +36,31 @@ You can test the current preview of 23 Code Enterprise locally:
 
 ## New Features
 - **Collaboration Preview:** Button currently leads to a blank page.
-- **Open File:** Functionality to open files.
-- **Save File:** Save files in JavaScript.
-- **New Logo:** Updated branding.
-- **New File:** Ability to create new files.
-- **Language Switch:** Feature to switch between languages.
-- **Text Size:** Adjustable text size.
-- **IntelliCode Feature:** AI-powered code suggestions.
-
+- ** more language support**
+- **keys** shows keyboard shortcuts
+- **themes** white and dark theme
 ## Note
 The current preview is a work in progress and may have limitations as of 11/3/2024:
 - Some buttons do not work and lead directly to a blank page.
 - The side panel is temporarily removed and needs more work to function properly.
-- **Collaboration Button:** Leads to a blank page.
-- **Settings:** No functionality.
-- **Close Tab:** No functionality.
-- **Enter Room ID:** For display purposes only.
+- **Collaboration Button:** needs a host feature.
+- **save as:** No dialogue shows up
+- **search & replace:** No functionality.
+- **changed collab button:** shows now not connected to server.
+- **import asset** add remove button
+- **quick save** only downloads the code and not saves the code
 
 ## To Do
-- Fix all buttons to ensure they function properly.
-- Add asset management side panel back.
-- Add an information tab on the lower part of the window.
-- Implement "Save As" window functionality.
+- Fix import assets.
+- fix side panel so you can choose file to work on
+- Fix sasve buttons
+- fix word wrap button.
 - Create a Discord server for the community.
+- change settigns buttons
+- add more themes
+- fix collab button
+- add host button
+- fix search & replace feature
 
 **Join us in shaping the future of 23 Code Enterprise!**
 
