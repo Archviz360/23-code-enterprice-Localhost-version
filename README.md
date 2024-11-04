@@ -1,5 +1,19 @@
 ![00029-2941959318](https://github.com/user-attachments/assets/a93e6ebe-4d14-4beb-8dae-102938161209)
-![Skärmbild 2024-11-03 070622](https://github.com/user-attachments/assets/9c58a31e-ff42-4d72-a4aa-2dfc20223430)
+![Skärmbild 2024-11-05 012435](https://github.com/user-attachments/assets/ee7e4fbc-dbac-4e78-abf8-8582c2a5a0d6)
+Information tab
+![Skärmbild 2024-11-05 012418](https://github.com/user-attachments/assets/e414bda1-9e40-41c7-b486-96187e64c5c5)
+upload asset to IDE
+![Skärmbild 2024-11-05 012215](https://github.com/user-attachments/assets/a7a1613a-a64d-4763-a4d1-ac6249919d23)
+choose theme
+![Skärmbild 2024-11-05 012158](https://github.com/user-attachments/assets/003701f7-4ceb-4e73-9e9e-793cc2e9a0a7)
+
+![Skärmbild 2024-11-05 012133](https://github.com/user-attachments/assets/68aaaaa1-c0f2-4ef4-9315-9d80bc6c2a56)
+language support
+![Skärmbild 2024-11-05 011943](https://github.com/user-attachments/assets/9ef916cd-5442-4599-a6c3-7a8448047753)
+collab
+![Skärmbild 2024-11-05 011930](https://github.com/user-attachments/assets/c9d13026-743c-47f9-815f-58433da1b670)
+Keyboard shortcut
+
 # 23-code-enterprice-Localhost-version
 
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Archviz360/23-code-enterprice-Localhost-version)
